@@ -25,9 +25,7 @@ class HomeHeaderAppBar extends StatelessWidget {
     return Row(
       children: [
         Logo(),
-        SizedBox(
-          width: gap_s,
-        ),
+        SizedBox(width: gap_s),
         Text(
           "RoomOfAll",
           style: h5(mColor: Colors.white),
@@ -41,10 +39,7 @@ class HomeHeaderAppBar extends StatelessWidget {
       children: [
         Text("회원가입", style: subtitle1(mColor: Colors.white)),
         SizedBox(width: gap_m),
-        Text(
-          "로그인",
-          style: subtitle1(mColor: Colors.white),
-        )
+        Text("로그인", style: subtitle1(mColor: Colors.white))
       ],
     );
   }

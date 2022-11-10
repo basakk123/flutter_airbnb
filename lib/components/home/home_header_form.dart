@@ -10,10 +10,11 @@ class HomeHeaderForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
     return Padding(
       padding: const EdgeInsets.only(top: gap_m),
       child: Align(
-        alignment: Alignment(-0.6, 0),
+        alignment: screenWidth < 520 ? Alignment(0, 0) : Alignment(-0.6, 0),
         child: Container(
           width: 420,
           decoration: BoxDecoration(
